@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_semua_berita"
+        android:title="Semua Berita"
+        android:icon="@drawable/ic_list"/>
+    <item
+        android:id="@+id/navigation_berita_baru"
+        android:title="Berita Baru"
+        android:icon="@drawable/ic_add"/>
+    <item
+        android:id="@+id/navigation_berita_saya"
+        android:title="Berita Saya"
+        android:icon="@drawable/ic_list_bullet"/>
+    <item
+        android:id="@+id/navigation_cari_berita"
+        android:title="Cari Berita"
+        android:icon="@drawable/ic_search"/>
+
+    <item
+        android:id="@+id/navigation_user"
+        android:title="User"
+        android:icon="@drawable/ic_person"/>
+</menu>
