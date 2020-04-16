@@ -75,7 +75,7 @@
         app:layout_constraintTop_toBottomOf="@+id/rgRating" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/tvKomentar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -93,7 +93,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Submit"
-        app:layout_constraintEnd_toEndOf="@+id/editText"
-        app:layout_constraintStart_toStartOf="@+id/editText"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintEnd_toEndOf="@+id/tvKomentar"
+        app:layout_constraintStart_toStartOf="@+id/tvKomentar"
+        app:layout_constraintTop_toBottomOf="@+id/tvKomentar" />
 </androidx.constraintlayout.widget.ConstraintLayout>
