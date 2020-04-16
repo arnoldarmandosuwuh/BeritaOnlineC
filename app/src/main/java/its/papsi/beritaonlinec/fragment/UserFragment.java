@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import its.papsi.beritaonlinec.FeedbackActivity;
 import its.papsi.beritaonlinec.LoginActivity;
 import its.papsi.beritaonlinec.R;
 import its.papsi.beritaonlinec.SessionManager;
@@ -25,7 +26,7 @@ import its.papsi.beritaonlinec.SessionManager;
 public class UserFragment extends Fragment {
 
     private TextView tvUserId;
-    private Button btnLogout;
+    private Button btnLogout, btnFeedback;
     private SessionManager sessionManager;
 
     public UserFragment() {
@@ -46,10 +47,19 @@ public class UserFragment extends Fragment {
 
         tvUserId = view.findViewById(R.id.tv_user_id);
         btnLogout = view.findViewById(R.id.btn_logout);
+        btnFeedback = view.findViewById(R.id.btn_feedback);
 
         sessionManager = new SessionManager(getContext());
 
         tvUserId.setText("User Id : " + sessionManager.getUserId());
+
+        btnFeedback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), FeedbackActivity.class);
+                startActivity(intent);
+            }
+        });
         btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
